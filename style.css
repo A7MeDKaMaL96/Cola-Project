@@ -208,12 +208,13 @@ i {
   }
   .cards {
     flex-direction: column;
+    width: 100%;
   }
   .testimonials {
     height: fit-content;
   }
   .card {
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
 }
