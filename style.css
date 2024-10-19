@@ -140,6 +140,10 @@ i {
 }
 .products img {
   width: 100%;
+  transition: all 1s;
+}
+.products img:hover {
+  transform: scale(0.9);
 }
 @media (max-width: 450px) {
   .container {
@@ -157,15 +161,18 @@ i {
   }
   main {
     flex-direction: column;
+    height: fit-content;
   }
   .text {
     /* display: inline-block; */
     width: 100%;
     align-items: center;
     text-align: center;
+    height: fit-content;
   }
   .img {
     width: 100%;
+    height: fit-content;
     /* background-color: aqua; */
     /* display: inline-block; */
     flex-direction: column;
