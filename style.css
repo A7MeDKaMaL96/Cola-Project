@@ -49,10 +49,12 @@ main {
 .img img {
   width: 400px;
   height: 100%;
+  animation: animation1 1s ease-out;
 }
 .social {
   display: flex;
   flex-direction: column;
+  animation: animation2 1s ease-out;
 }
 .text h1,
 p {
@@ -146,6 +148,22 @@ i {
 }
 .products img:hover {
   transform: scale(0.9);
+}
+@keyframes animation1 {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+@keyframes animation2 {
+  from {
+    transform: translateY(200px);
+  }
+  to {
+    transform: translateY(0);
+  }
 }
 @media (max-width: 450px) {
   .container {
